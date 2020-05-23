@@ -1,0 +1,17 @@
+.card-body{
+  background: #333333;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+img{
+  height: 200px;
+  width: 200px;
+}
+
+img:hover{
+  transform: scale(1.5);
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
