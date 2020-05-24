@@ -3,15 +3,15 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 //const _=require("lodash");
 var say = require('say');
-const helmet = require('helmet')
+const helmet = require('helmet');
 const path = require('path');
 
 
 const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
-app.use('/static', express.static(path.join(__dirname, 'public')))
-app.use(helmet.noSniff())
+app.use(express.static(__dirname + "/public"));
+app.use(helmet.noSniff());
 
 app.get("/",function(req,res){
 
